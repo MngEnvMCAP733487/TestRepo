@@ -91,6 +91,7 @@ $metadataFilePath = "metadata.json"
 $resourceTypes = $contentTypes.Split(",") | ForEach-Object { $contentTypeMapping[$_] } | ForEach-Object { $_.ToLower() }
 $MaxRetries = 3
 $secondsBetweenAttempts = 5
+#password123
 
 #Converts hashtable to string that can be set as content when pushing csv file
 function ConvertTableToString {
